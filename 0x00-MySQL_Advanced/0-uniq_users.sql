@@ -2,7 +2,7 @@
 
 DROP TABLE IF EXISTS users;
 CREATE TABLE users (
-id int() no null auto_increment primary key,
-email string(255) not null unique,
+id INT() NOT NULL AUTO_INCREMENT PRIMARY KEY,
+email string(255) NOT NULL UNIQUE,
 name string(255)
 );
