@@ -1,6 +1,7 @@
 DROP PROCEDURE IF EXISTS AddBonus;
 
-DELIMITER $ $ CREATE PROCEDURE AddBonus (
+DELIMITER $$
+CREATE PROCEDURE AddBonus (
     user_id INT,
     project_name VARCHAR(255),
     score FLOAT
@@ -35,4 +36,5 @@ INSERT INTO
 VALUES
     (user_id, project_id, score);
 
-END $ $ DELIMITER;
+END $$
+DELIMITER ;
