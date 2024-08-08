@@ -1,3 +1,4 @@
+-- creates a table users with a unique id, email and name field.
 
 DROP TABLE IF EXISTS users;
 CREATE TABLE users (
