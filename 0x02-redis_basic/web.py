@@ -35,4 +35,3 @@ def data_cacher(method: Callable) -> Callable:
 def get_page(url: str) -> str:
     '''Get the content of a web page.'''
     return requests.get(url).text
-
