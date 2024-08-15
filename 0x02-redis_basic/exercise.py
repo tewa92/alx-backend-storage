@@ -27,7 +27,7 @@ def get(self, key: str, fn: callable = None) -> Union[str, bytes, int, float]:
     return fn(data) if fn is not None else data
 
 
-def get_st(self, key: str) -> str:
+def get_str(self, key: str) -> str:
     ''' Get string from the cache '''
     return self.get(key, lambda x: x.decode('utf-8'))
 
